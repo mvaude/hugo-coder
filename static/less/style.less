@@ -355,6 +355,11 @@ img {
   50% { color: black; }
 }
 
+@-ms-keyframes "blink" {
+  from, to { color: transparent; }
+  50% { color: black; }
+}
+
 @keyframes "blink" {
   from, to { color: transparent; }
   50% { color: black; }
@@ -362,5 +367,6 @@ img {
 
 .cursor {
   -webkit-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
   animation: 1s blink step-end infinite;
 }

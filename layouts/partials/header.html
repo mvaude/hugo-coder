@@ -1,7 +1,7 @@
 <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="{{ .Site.BaseURL }}">
-      {{ .Site.Title }}
+      {{ .Site.Params.author }}
     </a>
     {{ with .Site.Menus.main }}
     <ul class="navigation-list float-right">
